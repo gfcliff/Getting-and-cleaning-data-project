@@ -1,0 +1,91 @@
+---
+title: "CODEBOOK"
+author: "GF"
+date: "4/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+Following Leonard Greski approach, see Discussion Forum, a Token Dictionary is adopted.
+TOKEN DICTIONARY
+
+TOKEN                   DESCRIPTION
+Body                    Signal basd on the body of an experiment participant, one of two                               components derived from the time based signals on the phone´s                                  accelerometer
+Gravity                 Signal based on gravity. Gravity is the second of the two measurement                          components derived from the phone´s accelerometer
+Freq                    Measurment based on the "frequency" domain, taken as a Fast Fourier                            Transform of the time-based signals
+Time                    Time domain signals captured at a constant rate of 50 Hz
+
+VARIABLES (Units in parenthesis)
+
+subject: Identifier of the subject who carried out the experiment. Its range is from 1 to 30
+activity: Identifier of the activity carried out by the subject. Its values are: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
+timebodyaccmean()x: Mean value of time domain accelerator x axis signal (in standard gravity units 'g')
+timebodyaccmean()y: Mean value of time domain accelerator y axis signal (in standard gravity units 'g')
+timebodyaccmean()z: Mean value of time domain accelerator z axis signal (in standard gravity units 'g')
+timegravityaccmean()x: Mean value of time domain accelerator x axis signal (in standard gravity units 'g')
+timegravityaccmean()y: Mean value of time domain accelerator y axis signal (in standard gravity units 'g')
+timegravityaccmean()z: Mean value of time domain accelerator z axis signal (in standard gravity units 'g')
+timebodyaccjerkmean()x: Mean value of time domain accelerator x axis jerk signal (in standard gravity units 'g')
+timebodyaccjerkmean()y: Mean value of time domain accelerator y axis jerk signal (in standard gravity units 'g')
+timebodyaccjerkmean()z: Mean value of time domain accelerator z axis jerk signal (in standard gravity units 'g')
+timebodygyromean()x: Mean value of time domain gyroscope x axis signal. (radians/second).
+timebodygyromean()y: Mean value of time domain gyroscope y axis signal (radians/second).
+timebodygyromean()z: Mean value of time domain gyroscope z axis signal (radians/second).
+timebodygyrojerkmean()x: Mean value of time domain gyroscope x axis jerk signal (radians/second).
+timebodygyrojerkmean()y: Mean value of time domain gyroscope y axis jerk signal (radians/second).
+timebodygyrojerkmean()z: Mean value of time domain gyroscope z axis jerk signal (radians/second).
+timebodyaccmagmean(): Mean value of time domain accelerator (in standard gravity units 'g')
+timegravityaccmagmean(): Mean value of magnitude of time domain accelerator (in standard gravity units 'g')
+timebodyaccjerkmagmean(): Mean value of magnitude of time domain accelerator jerk (in standard gravity units 'g') 
+timebodygyromagmean(): Mean value of magnitude of time domain gyroscope (radians/second).
+timebodygyrojerkmagmean(): Mean value of magnitude of time domain gyroscope jerk  (radians/second).
+freqbodyaccmean()x: Mean value of frequency domain accelerator x axis signal (in standard gravity units 'g')
+freqbodyaccmean()y: Mean value of frequency domain accelerator y axis signal (in standard gravity units 'g')
+freqbodyaccmean()z: Mean value of frequency domain accelerator z axis signal (in standard gravity units 'g')
+freqbodyaccjerkmean()x: Mean value of frequency domain accelerator x axis signal jerk  (in standard gravity units 'g')
+freqbodyaccjerkmean()y: Mean value of frequency domain accelerator y axis signal jerk (in standard gravity units 'g')
+freqbodyaccjerkmean()z: Mean value of frequency domain accelerator jerk (in standard gravity units 'g')
+freqbodygyromean()x: Mean value of frequency domain gyroscope x axis signal (radians/second).
+freqbodygyromean()y: Mean value of frequency domain gyroscope y axis signal (radians/second).
+freqbodygyromean()z: Mean value of frequency domain gyroscope z axis signal (radians/second).
+freqbodyaccmagmean(): Mean value of frequency domain magnitude of accelerator (in standard gravity units 'g')
+freqbodyaccjerkmagmean(): Mean value of frequency domain magnitude of accelerator jerk  (in standard gravity units 'g')
+freqbodygyromagmean(): Mean value of frequency domain magnitude of gyroscope (radians/second).
+freqbodygyrojerkmagmean(): Mean value of frequency domain magnitude of gyroscope jerk  (radians/second).
+timebodyaccstd()x: Standard deviation of time domain accelerator x axis signal (in standard gravity units 'g')
+timebodyaccstd()y: Standard deviation of time domain accelerator y axis signal (in standard gravity units 'g')
+timebodyaccstd()z: Standard deviation of time domain accelerator z axis signal (in standard gravity units 'g')
+timegravityaccstd()x: Standard deviation of time domain accelerator x axis signal (in standard gravity units 'g')
+timegravityaccstd()y: Standard deviation of time domain accelerator y axis signal (in standard gravity units 'g')
+timegravityaccstd()z: Standard deviation of time domain accelerator z axis signal (in standard gravity units 'g')
+timebodyaccjerkstd()x: Standard deviation of time domain accelerator x axis jerk signal (in standard gravity units 'g')
+timebodyaccjerkstd()y: Standard deviation of time domain accelerator y axis jerk signal (in standard gravity units 'g')
+timebodyaccjerkstd()z: Standard deviation of time domain accelerator z axis jerk signal (in standard gravity units 'g')
+timebodygyrostd()x: Standard deviation of time domain gyroscope x axis signal (radians/second).
+timebodygyrostd()y: Standard deviation of time domain gyroscope y axis signal (radians/second).
+timebodygyrostd()z: Standard deviation of time domain gyroscope z axis signal (radians/second).
+timebodygyrojerkstd()x: Standard deviation of time domain gyroscope x axis jerk signal (radians/second).
+timebodygyrojerkstd()y: Standard deviation of time domain gyroscope y axis jerk signal (radians/second).
+timebodygyrojerkstd()z: Standard deviation of time domain gyroscope z axis jerk signal (radians/second).
+timebodyaccmagstd(): Standard deviation of magnitude of time domain accelerator (in standard gravity units 'g')
+timegravityaccmagstd(): Standard deviation of magnitude of time domain accelerator (in standard gravity units 'g')
+timebodyaccjerkmagstd(): Standard deviation of magnitude of time domain accelerator jerk (in standard gravity units 'g')
+timebodygyromagstd(): Standard deviation of magnitude of time domain gyroscope (radians/second).
+timebodygyrojerkmagstd(): Standard deviation of time domain gyroscope jerk (radians/second).
+freqbodyaccstd()x: Standard deviation of frequency domain accelerator x axis signal (in standard gravity units 'g')
+freqbodyaccstd()y: frequency domain accelerator y axis signal (in standard gravity units 'g')
+freqbodyaccstd()z: frequency domain accelerator z axis signal (in standard gravity units 'g')
+freqbodyaccjerkstd()x: frequency domain accelerator x axis signal jerk (in standard gravity units 'g')
+freqbodyaccjerkstd()y: frequency domain accelerator y axis signal jerk (in standard gravity units 'g')
+freqbodyaccjerkstd()z: frequency domain accelerator z axis signal jerk (in standard gravity units 'g')
+freqbodygyrostd()x: frequency domain gyroscope x axis signal (radians/second).
+freqbodygyrostd()y: frequency domain gyroscope y axis signal (radians/second).
+freqbodygyrostd()z: frequency domain gyroscope z axis signal (radians/second).
+freqbodyaccmagstd(): frequency domain magnitude of accelerator (in standard gravity units 'g')
+freqbodyaccjerkmagstd(): frequency domain magnitude of accelerator jerk (in standard gravity units 'g')
+freqbodygyromagstd(): frequency domain magnitude of gyroscope (radians/second).
+freqbodygyrojerkmagstd(): frequency domain magnitude of gyroscope jerk  (radians/second).
